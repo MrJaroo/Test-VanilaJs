@@ -1,4 +1,4 @@
-import {addSkillsStudent, chgangeLeaen, StydentType } from "./02"
+import {addSkillsStudent, chgangeLeaen, livsCity, StydentType } from "./02"
 
 let stydent:StydentType 
    
@@ -45,4 +45,10 @@ test('add skill stydetn', ()=> {
     addSkillsStudent('Angular', stydent)
 
     expect(stydent.tehnoligies[3].title).toBe('Angular')
+})
+
+test('were shoulbe do live a student', ()=>{
+    const res = livsCity(stydent,'Samara')
+
+    expect(res).toBe(true)
 })

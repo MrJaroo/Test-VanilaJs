@@ -49,6 +49,10 @@ export function chgangeLeaen(learnt: string, student: StydentType) {
     student.address.city.learn = learnt
 }
 
-export function addSkillsStudent(skill:string, student:StydentType){
- student.tehnoligies.push({id:4,title:skill})
+export function addSkillsStudent(skill: string, student: StydentType) {
+    student.tehnoligies.push({ id: 4, title: skill })
+}
+
+export const livsCity = (s: StydentType, city: string) => {
+    return s.address.city.title === city
 }
