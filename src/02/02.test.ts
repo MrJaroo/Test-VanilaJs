@@ -1,4 +1,4 @@
-import {addSkillsStudent, chgangeLeaen, livsCity, StydentType } from "./02"
+import {addSkillsStudent, chgangeLeaen, livsCity, minsAge, StydentType } from "./02"
 
 let stydent:StydentType 
    
@@ -51,4 +51,10 @@ test('were shoulbe do live a student', ()=>{
     const res = livsCity(stydent,'Samara')
 
     expect(res).toBe(true)
+})
+
+test('age count for student', ()=> {
+    const res = minsAge(stydent, 10)
+    expect(res).toBe(19)
+    expect(stydent.age).toBe(19)
 })

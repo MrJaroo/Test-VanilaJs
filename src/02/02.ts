@@ -56,3 +56,7 @@ export function addSkillsStudent(skill: string, student: StydentType) {
 export const livsCity = (s: StydentType, city: string) => {
     return s.address.city.title === city
 }
+
+export function minsAge(s:StydentType, age:number){
+    return s.age -= age
+}
